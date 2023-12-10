@@ -1,0 +1,33 @@
+{
+  "name": "editorjs-header-with-alignment",
+  "version": "1.0.1",
+  "keywords": [
+    "codex editor",
+    "header",
+    "tool",
+    "editor.js",
+    "editorjs"
+  ],
+  "description": "Header Tool With Alignment for Editor.js",
+  "license": "MIT",
+  "repository": "wandersonsousa/header-with-alignment",
+  "main": "./dist/bundle.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development --watch"
+  },
+  "author": {
+    "name": "WanderCoder",
+    "email": "wandersoncoder@gmail.com"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^1.0.0",
+    "raw-loader": "^3.1.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  }
+}

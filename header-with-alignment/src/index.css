@@ -1,0 +1,109 @@
+/**
+ * Plugin styles
+ */
+.ce-header {
+  /* padding: 0.6em 0 3px; */
+  margin: 0;
+  line-height: 1.25em;
+  outline: none;
+}
+
+.ce-header p,
+.ce-header div {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/**
+ * Styles for Plugin icon in Toolbar
+ */
+.ce-header__icon {
+}
+
+.ce-header[contentEditable="true"][data-placeholder]::before {
+  position: absolute;
+  content: attr(data-placeholder);
+  color: #707684;
+  font-weight: normal;
+  display: none;
+  cursor: text;
+}
+
+.ce-header[contentEditable="true"][data-placeholder]:empty::before {
+  display: block;
+}
+
+.ce-header[contentEditable="true"][data-placeholder]:empty:focus::before {
+  display: none;
+}
+
+/* Alignment*/
+.ce-header--right {
+  text-align: right;
+}
+.ce-header--center {
+  text-align: center;
+}
+.ce-header--left {
+  text-align: left;
+}
+.ce-header--justify {
+  text-align: justify;
+}
+.cdx-settings-button {
+  color: #9d9d9d;
+}
+.cdx-settings-button.cdx-settings-button--active,
+.cdx-settings-button .cdx-settings-button--active {
+  color: black;
+}
+
+.ce-popover {
+  overflow: auto;
+}
+
+.editor-emoji-listing-container {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.editor-emoji-container {
+  display: none;
+}
+.editor-emoji-container.active {
+  display: block;
+  box-shadow: 1px 1px 6px #a5a5a5;
+  padding: 4px 4px;
+  border-radius: 8px;
+}
+.editor-emoji-icon {
+  cursor: pointer;
+}
+
+.editor-emoji-group-name-container {
+  font-size: 14px;
+  padding: 0px 2px;
+  color: #4c4c4c;
+  border-bottom: 1px solid #b9b9b9;
+  font-weight: 300;
+  margin-top: 8px;
+}
+
+.editor-emoji-search-container {
+  padding: 8px 2px;
+}
+
+.editor-emoji-search-container input {
+  width: 100%;
+  outline: none;
+  padding: 0px 8px;
+  margin: 0px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 100;
+}

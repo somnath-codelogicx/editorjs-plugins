@@ -1,0 +1,78 @@
+.ce-paragraph {
+    line-height: 1.6em;
+    outline: none;
+}
+
+.ce-paragraph[data-placeholder]:empty::before{
+  content: attr(data-placeholder);
+  color: #707684;
+  font-weight: normal;
+  opacity: 0;
+}
+
+/** Show placeholder at the first paragraph if Editor is empty */
+.codex-editor--empty .ce-block:first-child .ce-paragraph[data-placeholder]:empty::before {
+  opacity: 1;
+}
+
+.codex-editor--toolbox-opened .ce-block:first-child .ce-paragraph[data-placeholder]:empty::before,
+.codex-editor--empty .ce-block:first-child .ce-paragraph[data-placeholder]:empty:focus::before {
+  opacity: 0;
+}
+
+.ce-paragraph p:first-of-type{
+    margin-top: 0;
+}
+
+.ce-paragraph p:last-of-type{
+    margin-bottom: 0;
+}
+.ce-popover {
+  overflow: auto;
+}
+
+.editor-emoji-listing-container {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.editor-emoji-container {
+  display: none;
+}
+.editor-emoji-container.active {
+  display: block;
+  box-shadow: 1px 1px 6px #a5a5a5;
+  padding: 4px 4px;
+  border-radius: 8px;
+}
+.editor-emoji-icon {
+  cursor: pointer;
+}
+
+.editor-emoji-group-name-container {
+  font-size: 14px;
+  padding: 0px 2px;
+  color: #4c4c4c;
+  border-bottom: 1px solid #b9b9b9;
+  font-weight: 300;
+  margin-top: 8px;
+}
+
+.editor-emoji-search-container {
+  padding: 8px 2px;
+}
+
+.editor-emoji-search-container input {
+  width: 100%;
+  outline: none;
+  padding: 0px 8px;
+  margin: 0px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 100;
+}
